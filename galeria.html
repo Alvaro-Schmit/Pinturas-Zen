@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+ 
+ 
+  <title>galeria</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Markazi+Text&family=Merienda&display=swap&family=Raleway&display=swap"
+    rel="stylesheet">
+
+
+
+  <link rel="stylesheet" href="./css/style33.css">
+  <link rel="stylesheet" href="./css/gridGaleria33.css">
+  <link rel="stylesheet" href="./css/gridGaleria-33.css">
+  <link rel="stylesheet" href="./css/navBar.css">
+  <link rel="stylesheet" href="./css/galerias2.css">
+</head>
+
+<body>
+
+  <header id="header">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+      <div class="container-fluid" id="navbar">
+        <div class="navbar navbar-light">
+          <div class="container">
+            <div class="nombreEmpresa">
+              <h3 class="nombreh3">PINTURAS <span class="zen">zen</span></h3>
+
+            </div>
+          </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarCollapse">
+          <ul class="navbar-nav mr-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  active" href="./galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ingresocotizador.html">Cotizador</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <span id="pinturasInteriores"></span>
+    </nav>
+  </header>
+  <br><br>
+  <section class="secciones">
+
+    <div class="container">
+      <div>
+
+        <h2 class="featurette-heading titulosGaleria">Pintura de Interiores <span class="text-muted"> en casas,
+            apartamentos y oficinas.</span></h2>
+        <p class="lead">Generar un cambio de aspecto en los espacios con los cuales convives puede ser una inversion en
+          calidad de vida</p>
+      </div>
+    </div>
+
+    <!-- comienza ////////////////////////////////////////////////////////////// -->
+
+    <section class=" text-center">
+
+
+      <div id="galery">
+
+        <ul class="galeria__gral" id="galeryLightBox"></ul>
+
+        <div class="ampliaciones"></div>
+
+      </div>
+
+
+    </section>
+    <section id="contenedor-principal" class="btn-cierra">
+      <div id="contenedor-interno">
+        <img id="img-activa" src="" alt="galeria de imagenes">
+        <div class="btn-cierra" id="btn-cierra" type="button">
+          <img src="./Iconos/boton-cerrar.png" alt="">
+        </div>
+        <button class='button' id="btn-retrocede" type="button">&lt;</button>
+        <button class='button' id="btn-adelanta" type="button">&gt;</button>
+      </div>
+    </section>
+  </section>
+  <section id="contenedor-principal" class="btn-cierra">
+    <div id="contenedor-interno">
+      <img id="img-activa" src="" alt="galeria de imagenes">
+      <div class="btn-cierra" id="btn-cierra" type="button">
+        <img src="./Iconos/boton-cerrar.png" alt="">
+      </div>
+      <button class='button' id="btn-retrocede" type="button">&lt;</button>
+      <button class='button' id="btn-adelanta" type="button">&gt;</button>
+    </div>
+  </section>
+
+  <!-- termina //////////
+  //////////////////////////////////////////////////// -->
+  <section class="galeriaGrid">
+
+    <div id="card-01">
+
+      <img id="abrir1" loading="lazy" class="efecto_imagen escalar_hover"
+        src="./imagenes/interiores/hoyo19Original.jpeg" alt="" onclick="loadGalery2(this)">
+        <div id="verMas1" onclick=""></div>
+
+      <h3 class="h3galeria">Protector transparente sobre madera.</h3>
+
+    </div>
+    
+
+    <div id="card-02">
+
+      <img id="abrir2" loading="lazy" class="efecto_imagen escalar_hover"
+        src="./imagenes/interiores/puertoLiving.jpg" alt="" onclick="loadGalery2(this)">
+
+      <h3 class="h3galeria">Apartamento pintado con Airless</h3>
+
+    </div>
+
+    <div class="video">
+
+      <img id="video1" loading="lazy" class="efecto_imagen escalar_hover"
+        src="./imagenes/interiores/interiorGonzaloDerech.jpg" alt="" onclick="loadGalery2(this)">
+      <!-- <video src="./video/video.mp4" autoplay loop muted></video> -->
+      <h3 class="h3galeria" id="h3video">Enduido y pintura de interiores</h3>
+    </div>
+
+    <div id="card-03">
+
+      <img id="abrir3" loading="lazy" class="efecto_imagen escalar_hover"
+      src="./imagenes/interiores/cocinaSanfernando.jpg"  alt=""  onclick="loadGalery2(this)">
+
+      <h3 class="h3galeria">Pintado completo de muebles de cosina con pistola de aire</h3>
+
+    </div>
+
+    <div id="card-04">
+
+      <img loading="lazy" class="efecto_imagen escalar_hover" src="./imagenes/interiores/oceanPark.jpeg" alt="">
+
+      <h3 class="h3galeria">Interior de casa.</h3>
+    </div>
+
+    <div id="card-05">
+
+      <img id="abrir5" loading="lazy" class="efecto_imagen escalar_hover"
+       src="./imagenes/interiores/casaGarzon.jpg" alt="" onclick="loadGalery2(this)">
+
+      <h3 class="h3galeria">Cambio de color paredes internas.</h3>
+
+
+    </div>
+
+
+    <div id="card-06">
+
+      <img id="abrir6" loading="lazy" class="efecto_imagen escalar_hover" src="./imagenes/interiores/guillermoLiving.jpg" onclick="loadGalery2(this)" alt="">
+
+      <h3 class="h3galeria">Mas imagenes de pinturas en interiores.</h3>
+
+    </div>
+
+    <div id="card-07">
+
+      <img loading="lazy" class="efecto_imagen escalar_hover" src="./imagenes/interiores/paredRoja.jpg" alt="">
+
+      <h3 class="h3galeria">Pared de color en sala.</h3>
+
+    </div>
+  </section>
+
+  <section class="contenedorVideo2">
+    <!-- <iframe src="https://player.vimeo.com/video/535895484" width="640" height="352" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> -->
+
+
+    <video loading="lazy" src="./videos/airless recortado.mp4" autoplay loop muted></video>
+
+    <div id="info-video">
+      <h3 id="h3video">Pintura con Airless</h3>
+      <p class="lead">Entre las varias ventajas que presenta el sistema de pintado con maquinas airless, se destaca:
+        la rapides; la facilidad para cubrir superficies ásperas tales como revoques gruesos y texturados; la
+        terminacion sin marcas de rodillo sobre todo cualdo se trata de superficies donde la luz revela cualquier
+        inperfeccion.
+      </p>
+
+
+
+    </div>
+  </section>
+  </section>
+  <br><br>
+
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+
+  <hr>
+  <br id="pinturasExteriores">
+  <section class="secciones">
+
+    <div class="container">
+      <div>
+        <h2 class="featurette-heading titulosGaleria text-center">Texturas y Pinturas<span class="text-muted"> en
+            exteriores. </span></h2>
+        <p class="lead">Existe una amplia gama de materiales para proteger y embellecer el exterior de su hogar. Para
+          sacar el máximo provecho de estos, se requiere una aplicación optima de acuerdo con los requerimientos de cada
+          material y las condiciones a las cuales será expuesto.</p>
+      </div>
+    </div>
+
+    <section class="galeriaGrid-2">
+
+      <div id="card-011">
+       
+          <img loading="lazy" class="efecto_imagen escalar_hover" id="img011"
+            src="./imagenes/Exteriores/prefabricadaGaleria.jpg" alt="" onclick="loadGalery2(this)">
+       
+        <h3 class="h3galeria">Paredes exteriores texturadas</h3>
+
+      </div>
+
+      <div id="card-012">
+        
+          <img loading="lazy" class="efecto_imagen escalar_hover" id="img012"
+            src="./imagenes/Exteriores/postigosHierro.jpg" alt="" onclick="loadGalery2(this)">
+        
+        <h3 class="h3galeria">Postigos de hierro con esmalte transparente</h3>
+
+      </div>
+
+
+
+      <div id="card-013">
+        
+          <img loading="lazy" class="efecto_imagen escalar_hover" id="img013"
+            src="./imagenes/Exteriores/elClaroRejas.jpg" alt="">
+        
+        <h3 class="h3galeria">Casa modelo el Jose Ignacio</h3>
+
+      </div>
+
+      <div id="card-014">
+        
+          <img loading="lazy" class="efecto_imagen escalar_hover" id="img014" 
+          src="./imagenes/Exteriores/pizina.jpeg" onclick="loadGalery2(this)"
+            alt="">
+        
+        <h3 class="h3galeria">Casa modelo el Jose Ignacio</h3>
+      </div>
+
+      <div id="card-015">
+        
+          <img loading="lazy" class="efecto_imagen escalar_hover" id="img015"
+            src="./imagenes/Exteriores/elQuijoteFondo.jpg" onclick="loadGalery2(this)" alt="">
+        
+        <h3 class="h3galeria">Casa modelo el Jose Ignacio</h3>
+
+      </div>
+
+      <div id="card-016">
+        
+          <img loading="lazy" class="efecto_imagen escalar_hover" id="img016"
+            src="./imagenes/Exteriores/pinaresDelFaroFrenteDerecha.jpg" alt="">
+        
+        <h3 class="h3galeria">Casa modelo el Jose Ignacio</h3>
+
+      </div>
+
+
+
+    </section>
+  </section>
+
+  <!--////////////////////////////////  FLEX ENDUIDO  ////////////////////////////////////////////////-->
+
+  <hr id="muebles">
+  <section class="secciones">
+
+    <div>
+      <h2 class="featurette-heading titulosGaleria text-center">Pintura en muebles de madera, otros materiales<span
+          class="text-muted"> y decoraciones. </span></h2>
+      <p class="lead" id="pTituloEnduido">Existe una amplia gama de materiales para proteger y embellecer el interior y
+        exterior de su casa. Para sacar el máximo provecho de estos, se requiere una aplicación optima de acuerdo con
+        los
+        requerimientos de cada material y las condiciones a las cuales será expuesto. Tambien trabajamos en
+        decoraciones donde se requiere una mano de obra especial y con experiencia para poder plasmar los
+    </div>
+
+
+
+    <section class="flexboxContainer">
+
+      <div class="flexDiv" id="cardRope-15">
+        
+          <img loading="lazy" class="efecto_imagen escalar_hover imgflexbox" src="./imagenes/madera/tiniVola.jpg"
+            alt="">
+       
+        <h3 class="h3galeria">Casa modelo el Jose Ignacio</h3>
+        <p><a class="btn btn-secondary" href="./galeria.html#muebles">Ver más &raquo;</a></p>
+
+      </div>
+
+      <div class="flexDiv" id="cardRope-16">
+        
+          <img loading="lazy" class="efecto_imagen escalar_hover imgflexbox"
+            src="./imagenes/madera/sanFernandoMuebles.jpg" alt="">
+       
+        <h3 class="h3galeria">Casa modelo el Jose Ignacio</h3>
+        <p><a class="btn btn-secondary" href="./galeria.html#muebles">Ver más &raquo;</a></p>
+
+      </div>
+
+
+
+      <div class="flexDiv" id="cardRope-17">
+        
+          <img loading="lazy" class="efecto_imagen escalar_hover imgflexbox" src="./imagenes/madera/sillonMadera.jpg"
+            alt="">
+       
+        <h3 class="h3galeria">Casa modelo el Jose Ignacio</h3>
+        <p><a class="btn btn-secondary" href="./galeria.html#muebles">Ver más &raquo;</a></p>
+
+      </div>
+
+      <div class="flexDiv" id="cardRope-18">
+        
+          <img loading="lazy" class="efecto_imagen escalar_hover imgflexbox" src="./imagenes/madera/mesadMadera.jpg"
+            alt="">
+       
+        <h3 class="h3galeria">Casa modelo el Jose Ignacio</h3>
+        <p><a class="btn btn-secondary" href="./galeria.html#muebles">Ver más &raquo;</a></p>
+      </div>
+      <div class="flexDiv" id="cardRope-19">
+        
+          <img loading="lazy" class="efecto_imagen escalar_hover imgflexbox" src="./imagenes/texturas/texturado.jpg"
+            alt="">
+       
+        <h3 class="h3galeria">Casa modelo el Jose Ignacio</h3>
+        <p><a class="btn btn-secondary" href="./galeria.html#muebles">Ver más &raquo;</a></p>
+      </div>
+      <div class="flexDiv" id="cardRope-110">
+        
+          <img loading="lazy" class="efecto_imagen escalar_hover imgflexbox" src="./imagenes/texturas/banoRallado.jpeg"
+            alt="">
+       
+        <h3 class="h3galeria">Casa modelo el Jose Ignacio</h3>
+        <p><a class="btn btn-secondary" href="./galeria.html#muebles">Ver más &raquo;</a></p>
+      </div>
+
+    </section>
+  </section>
+
+
+
+  <br><br>
+  <br>
+
+
+  <hr id="rapeAcces">
+  <section class="secciones">
+
+    <div class="container">
+      <div>
+        <h2 class="featurette-heading titulosGaleria text-center">Pintura de Edificios<span class="text-muted"> con
+            sistema Rope Access </span></h2>
+        <p class="lead">Este sistema permite acceder al trabajo en altura sin la necesidad de andamios ni balancines
+          manteniendo los accesos y pasillos del edificio libre de estos. Se trata de un sistema practico, minimiza los
+          ruidos y las molestias para los habitantes del edificio, es un método sencillo de fácil montaje, que permite
+          acabar los trabajos de forma más rápida y eficaz.
+          Los sistemas para llevar a cabo los trabajos en altura a través de este sistema son cada vez más avanzados,
+          garantizando la seguridad de los operarios, como también los riesgos por montaje y recogida de grandes
+          infraestructuras. La seguridad de los técnicos está garantizada a través de un doble anclado de cuerdas con
+          numerosos mecanismos de protección.
+        </p>
+      </div>
+    </div>
+
+    <section class="flexboxContainer">
+
+      <div class="flexDiv" id="cardRope-1">
+        
+          <img loading="lazy" class="efecto_imagen escalar_hover imgflexbox"
+            src="./imagenes/RopeAccess/hidrolavando.jpeg" alt="">
+       
+        <!-- <h3 class="h3galeria">Casa modelo el Jose Ignacio</h3> -->
+
+      </div>
+
+      <div class="flexDiv" id="cardRope-2">
+        
+          <img loading="lazy" class="efecto_imagen escalar_hover imgflexbox"
+            src="./imagenes/RopeAccess/verticalCuadrada.jpeg" alt="">
+       
+        <!-- <h3 class="h3galeria">Casa modelo el Jose Ignacio</h3> -->
+
+      </div>
+
+
+
+      <div class="flexDiv" id="cardRope-3">
+        
+          <img loading="lazy" class="efecto_imagen escalar_hover imgflexbox" src="./imagenes/RopeAccess/gasparRape.jpg"
+            alt="">
+       
+        <!-- <h3 class="h3galeria">Casa modelo el Jose Ignacio</h3> -->
+
+      </div>
+
+      <div class="flexDiv" id="cardRope-4">
+        
+          <img loading="lazy" class="efecto_imagen escalar_hover imgflexbox"
+            src="./imagenes/RopeAccess/nocheRectangular.jpeg" alt="">
+       
+        <!-- <h3 class="h3galeria">Casa modelo el Jose Ignacio</h3> -->
+      </div>
+      <div class="flexDiv" id="cardRope-5">
+        
+          <img loading="lazy" class="efecto_imagen escalar_hover imgflexbox"
+            src="./imagenes/RopeAccess/ropeAccesblanco2.jpeg" alt="">
+       
+        <!-- <h3 class="h3galeria">Casa modelo el Jose Ignacio</h3> -->
+      </div>
+
+    </section>
+  </section>
+
+
+  <br><br>
+  <br>
+
+
+  <hr id="obras">
+  <section class="secciones">
+
+    <div>
+      <h2 class="featurette-heading titulosGaleria text-center">Pinturas en obras <span class="text-muted"> en
+          contrucción </span></h2>
+      <p class="lead"> Nos adaptamos y acoplamos a los tiempos y necesidades del
+        avance de la construcion. Usamos prosedimientos rapidos y efectivos para no obstaculizar el avance de ésta.
+        Pinturas sobre reboque, yeso, madera. siding, metales, Isopanel etc</p>
+
+
+
+      <section class="flexboxContainer">
+
+        <div class="flexDiv" id="cardobras-25">
+          
+            <img loading="lazy" class="efecto_imagen escalar_hover imgflexbox" src="./imagenes/obras/obras1.jpg" alt="">
+         
+          <h3 class="h3galeria">Casa modelo el Jose Ignacio</h3>
+          <p><a class="btn btn-secondary" href="./galeria.html#muebles">Ver más &raquo;</a></p>
+
+        </div>
+
+        <div class="flexDiv" id="cardobras-26">
+          
+            <img loading="lazy" class="efecto_imagen escalar_hover imgflexbox" src="./imagenes/obras/obras2.jpg" alt="">
+         
+          <h3 class="h3galeria">Casa modelo el Jose Ignacio</h3>
+          <p><a class="btn btn-secondary" href="./galeria.html#muebles">Ver más &raquo;</a></p>
+
+        </div>
+
+
+
+        <div class="flexDiv" id="cardobras-27">
+          
+            <img loading="lazy" class="efecto_imagen escalar_hover imgflexbox" src="./imagenes/obras/obras3.jpg" alt="">
+         
+          <h3 class="h3galeria">Casa modelo el Jose Ignacio</h3>
+          <p><a class="btn btn-secondary" href="./galeria.html#muebles">Ver más &raquo;</a></p>
+
+        </div>
+
+        <div class="flexDiv" id="cardobras-28">
+          
+            <img loading="lazy" class="efecto_imagen escalar_hover imgflexbox" src="./imagenes/obras/obras4.jpg" alt="">
+         
+          <h3 class="h3galeria">Casa modelo el Jose Ignacio</h3>
+          <p><a class="btn btn-secondary" href="./galeria.html#muebles">Ver más &raquo;</a></p>
+        </div>
+        <div class="flexDiv" id="cardobras-29">
+          
+            <img loading="lazy" class="efecto_imagen escalar_hover imgflexbox" src="./imagenes/obras/obras5.jpg" alt="">
+         
+          <h3 class="h3galeria">Casa modelo el Jose Ignacio</h3>
+          <p><a class="btn btn-secondary" href="./galeria.html#muebles">Ver más &raquo;</a></p>
+        </div>
+        <div class="flexDiv" id="cardobras-30">
+          
+            <img loading="lazy" class="efecto_imagen escalar_hover imgflexbox" src="./imagenes/obras/obras6.jpg" alt="">
+         
+          <h3 class="h3galeria">Casa modelo el Jose Ignacio</h3>
+          <p style="visibility: hidden;"><a class="btn btn-secondary" href="./galeria.html#muebles">Ver más &raquo;</a>
+          </p>
+        </div>
+
+
+      </section>
+  </section>
+
+
+
+
+  <br><br><br><br><br>
+
+  <footer>
+    <div style="height: 150px; overflow: hidden;">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; margin-bottom:0px">
+        <path d="M-45.99,50.81 C266.08,172.20 257.05,24.17 502.54,45.88 L528.49,119.89 L-17.21,153.45 Z"
+          style="stroke: none; fill: #08f;"></path>
+      </svg>
+    </div>
+  </footer>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+
+  <script src="./js/galery.js/galeryData.js"></script>
+  <script src="./js/galery.js/galeryScript.js"></script>
+
+
+</body>
+
+</html>

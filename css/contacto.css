@@ -1,0 +1,73 @@
+
+body{
+    width: 100%;
+    background-image: url(../imagenes/background/background002.jpeg);
+   background-color: rgba(240, 221, 188, 0.787);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-blend-mode:luminosity;
+  margin: 0;
+
+}
+
+#formid{
+    width: 560px;
+    margin:auto;
+    background: rgba(26, 17, 2, 0.719);
+padding: 10px 20px;
+box-sizing: border-box;
+margin-top: 140px;
+border-radius: 5px;
+font-family: monospace;
+}
+
+.h2Contacto{
+    color: rgb(253, 165, 56);
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+input, textarea{
+width: 100%;
+margin-bottom: 20px;
+padding: 7px;
+box-sizing: border-box;
+font-size: 17px;
+border: none;
+
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+#boton{
+    background-color: rgb(253, 165, 56);
+color: rgb(53, 28, 28);
+padding: 12px;
+}
+
+
+#borrar{
+    background-color:rgba(26, 17, 2, 0.719) ;
+color: rgba(253, 164, 56, 0.644);
+padding: 12px;
+}
+
+#boton, #borrar:hover{
+    cursor: pointer;
+}
+
+@media (max-width:480px) {
+form{
+    width: 100%;
+
+}
+
+}

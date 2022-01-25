@@ -1,0 +1,112 @@
+body {
+    background-image: url(../imagenes/background/background002.jpeg);
+}
+
+#cotizador{
+    margin:auto;
+    margin-top: 120px;
+    width: 980px;
+  
+    background: rgba(26, 17, 2, 0.719);
+padding: 10px 20px;
+box-sizing: border-box;
+
+border-radius: 5px;
+font-family: monospace;
+}
+
+#titleCotizador {
+    font-size: 50px;
+    color: blanchedalmond;
+}
+
+#subtitleCotizador {
+    font-size: 30px;
+    color: blanchedalmond;
+}
+
+.description{
+    font-size: 12px;
+}
+
+.flexContainerBody,
+#flexContainerBody03 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+    align-items: stretch;
+    background-color: rgba(253, 102, 56, 0.9);
+    ;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.flexItemBody01 {
+    background-color: rgba(253, 165, 56, 0.9);
+    ;
+    width: 500px;
+    height: 200px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.flexItemBody02 {
+    background-color: rgba(253, 165, 56, 0.9);
+    width: 300px;
+    height: 200px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.flexContainerBody.img {
+    margin-bottom: 20px;
+}
+
+select,
+input {
+    margin-bottom: 0px;
+    width: 220px;
+}
+
+.pregunta {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#btnCotizar,
+#btnVolverACotizar {
+    background-color: rgb(233, 234, 236);
+    margin-left: 2%;
+}
+
+#divBoton01 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#obtenerCotizacion {
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+}

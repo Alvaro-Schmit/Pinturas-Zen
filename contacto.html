@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+
+   <!-- bootstrap link --> 
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!--font google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&family=Merienda&display=swap&family=Raleway&display=swap" rel="stylesheet">
+
+   <!--mis css-->
+    <link rel="stylesheet" href="./css/style33.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="stylesheet" href="./css/navBar.css">
+    
+</head>
+
+<body>
+
+      
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+     
+      <div class="container-fluid" id="navbar">
+        <div class="navbar navbar-light">
+          <div class="container">
+            <div class="nombreEmpresa">
+              <h3 class="nombreh3">PINTURAS <span class="zen">zen</span></h3>
+  
+            </div>   
+          </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarCollapse">
+          <ul class="navbar-nav mr-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  " href="./galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ingresocotizador.html">Cotizador</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <span id="pinturasInteriores"></span>
+    </nav>
+  </header>
+    <main >
+        <form action="enviar.php" method="post" id="formid">
+            <h2 class="h2Contacto">ENVIAR CONSULTA</h2>
+            <input type="text" name="nombre"  id="txt1" placeholder="Nombre y Apellido" required>
+
+            <input type="e-mail" name="correo"  placeholder="Correo electrónico" required>
+
+            <input type="text" name="telefono"  placeholder="Teléfono" required>
+            <!-- <input type="text" name="mensaje"  placeholder="Teléfono" required> -->
+
+            <textarea  name="mensaje" id=""  placeholder="Escriba aquí su consulta" required></textarea>
+
+            <input type="reset" value="Borrar" id="borrar">
+            <input type="submit" value="Enviar" id="boton" onclick="getValueInput2()">
+
+        </form>
+    </main>
+  
+   
+    <br><br><br>
+
+<footer >
+  <div style="height: 150px; overflow: hidden;" >
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; margin-bottom:0px"><path d="M-45.99,50.81 C266.08,172.20 257.05,24.17 502.54,45.88 L528.49,119.89 L-17.21,153.45 Z" style="stroke: none; fill: #08f;"></path></svg>
+  </div>      
+</footer>
+
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/contacto.js"></script>
+</body>
+
+</html>

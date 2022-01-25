@@ -1,0 +1,261 @@
+
+    .h3galeria {
+        margin-top: 10px;
+        font-size: 20px;
+        text-align: center;
+        
+        height: 10%;
+    }
+    
+   
+   
+    /*////////////////////////////////////////*/
+    
+    .galeriaGrid-2 {
+       
+        margin-top: 0px;
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 40px;
+        
+        box-sizing: border-box;
+        padding: 26px;
+    }
+    
+    #card-011 {
+         /* border: solid 0.5px rgba(80, 48, 48, 0.2); */
+        grid-area: 1/1/2/3;
+    }
+    #img011{
+        height: 300px;
+    }
+    
+    #card-012 {
+         /* border: solid 0.5px rgba(80, 48, 48, 0.2); */
+        grid-area: 1/3/2/5;
+    }
+    #img012{
+        height: 300px;
+    }
+    #card-013 {
+         /* border: solid 0.5px rgba(80, 48, 48, 0.2); */
+        grid-area: 1/5/2/7;
+    }
+    #img013{
+        height: 300px;
+    }
+    #card-014 {
+         /* border: solid 0.5px rgba(80, 48, 48, 0.2); */
+        grid-area: 2/1/3/3;
+    }
+    #img014{
+        height: 300px;
+    }
+    #card-015 {
+        /* border: solid 0.5px rgba(80, 48, 48, 0.2); */
+       grid-area: 2/3/3/5;
+   }
+   #img015{
+       height: 300px;
+   }
+   #card-016 {
+    /* border: solid 0.5px rgba(80, 48, 48, 0.2); */
+   grid-area: 2/5/3/7;
+}
+#img016{
+   height: 300px;
+}
+
+    
+    .galeriaGrid-2 img {
+        width: 100%;
+       
+        object-fit: cover;
+        box-sizing: border-box;
+        padding: 10px;
+     
+    }
+    
+    
+    
+    /*///////////////////////////   FLEXBOX ENDUIDO ////////////////////////*/
+
+    .flexboxContainer{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+    }
+
+.flexDiv{
+    width: 400px;
+    height: auto;
+    aspect-ratio: 20/16;
+    object-fit: cover;
+}
+
+.imgflexbox{
+width: 100%;
+height: 100%;
+min-width: 200px;
+margin-top: 40px;
+object-fit: cover;
+}
+#pTituloEnduido{
+    margin-bottom: 40px;
+}
+
+
+@media (max-width: 640px){
+  
+   
+    .galeriaGrid-2 {
+       
+        margin-top: 0px;
+        width: 100;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(8, 1fr) ;
+        grid-gap: 20px;
+        
+        box-sizing: border-box;
+        padding: 26px;
+    }
+    
+    #card-011 {
+         /* border: solid 0.5px rgba(80, 48, 48, 0.2); */
+        grid-area: 1/1/2/4;
+    }
+    #img011{
+        width: 100%;
+        height: 80%;
+    }
+    
+    #card-012 {
+         /* border: solid 0.5px rgba(80, 48, 48, 0.2); */
+        grid-area: 2/1/3/4;
+    }
+    #img012{
+        height: 80%;
+    }
+    #card-013 {
+         /* border: solid 0.5px rgba(80, 48, 48, 0.2); */
+        grid-area: 3/1/4/4;
+    }
+    #img013{
+        height: 80%;
+    }
+    #card-014 {
+         /* border: solid 0.5px rgba(80, 48, 48, 0.2); */
+        grid-area: 4/1/5/4;
+    }
+    #img014{
+        height: 80%;
+    }
+    #card-015 {
+        /* border: solid 0.5px rgba(80, 48, 48, 0.2); */
+       grid-area: 5/1/6/4;
+   }
+   #img015{
+       height: 80%;
+   }
+   #card-016 {
+    /* border: solid 0.5px rgba(80, 48, 48, 0.2); */
+   grid-area: 6/1/7/4;
+}
+#img016{
+   height: 80%;
+}
+    
+    /* .galeriaGrid-2 img {
+        width: 100%;
+       
+        object-fit: cover;
+        box-sizing: border-box;
+        padding: 10px;
+     
+    }
+     */
+
+}
+
+
+
+@media only screen and (max-width: 1023px)and (min-width: 640px){
+  
+   
+    .galeriaGrid-2 {
+       
+        margin-top: 0px;
+        width: 100;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr) ;
+        grid-gap: 20px;
+        
+        box-sizing: border-box;
+        padding: 26px;
+    }
+    
+    #card-011 {
+         /* border: solid 0.5px rgba(80, 48, 48, 0.2); */
+        grid-area: 1/1/2/4;
+    }
+    #img011{
+        width: 100%;
+        height: 80%;
+    }
+    
+    #card-012 {
+         /* border: solid 0.5px rgba(80, 48, 48, 0.2); */
+        grid-area: 1/4/2/7;
+    }
+    #img012{
+        height: 80%;
+    }
+    #card-013 {
+         /* border: solid 0.5px rgba(80, 48, 48, 0.2); */
+        grid-area: 2/1/3/4;
+    }
+    #img013{
+        height: 80%;
+    }
+    #card-014 {
+         /* border: solid 0.5px rgba(80, 48, 48, 0.2); */
+        grid-area: 2/4/3/7;
+    }
+    #img014{
+        height: 80%;
+    }
+    #card-015 {
+        /* border: solid 0.5px rgba(80, 48, 48, 0.2); */
+       grid-area: 3/1/4/4;
+   }
+   #img015{
+       height: 80%;
+   }
+   #card-016 {
+    /* border: solid 0.5px rgba(80, 48, 48, 0.2); */
+   grid-area: 3/4/4/7;
+}
+#img016{
+   height: 80%;
+}
+    
+    /* .galeriaGrid-2 img {
+        width: 100%;
+       
+        object-fit: cover;
+        box-sizing: border-box;
+        padding: 10px;
+     
+    }
+     */
+
+}
