@@ -44,8 +44,8 @@ let navBar = document.getElementById('header')
 
 const abreLightbox = (event) => {
   console.log(event);
-  imagenActiva.src = event.target.src;
-  //  imagenActiva.src = ulImagenes[0].src;
+  // imagenActiva.src = event.target.src;
+   imagenActiva.src = ulImagenes[0].src;
   lightbox.style.display = 'flex';
 
   navBar.style.display = 'none';
@@ -95,8 +95,10 @@ document.getElementById('abrir5').addEventListener('click', abreLightbox);
 document.getElementById('abrir6').addEventListener('click', abreLightbox);
 document.getElementById('img011').addEventListener('click', abreLightbox);
 document.getElementById('img012').addEventListener('click', abreLightbox);
+document.getElementById('img013').addEventListener('click', abreLightbox);
 document.getElementById('img014').addEventListener('click', abreLightbox);
 document.getElementById('img015').addEventListener('click', abreLightbox);
+document.getElementById('img016').addEventListener('click', abreLightbox);
 
 // mouse enter & leave cambios en imagen 
 //comentada ya que no esta funcionando como deveria. cuando el mause pasa por abrir desactiva la funcion de light box

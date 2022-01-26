@@ -1,22 +1,63 @@
-//1111111111111111111111111111111111111111111111111
+//SSSSSSEEEEEELLLLLEEEEECCCCTTTTTTTTTTTTTTTTTTTTTTTTTTT
 
-let dataselect00 = [{
-        'valorMultiplicador': '1',
-        'textOption': 'Reboque'
-    }, {
-        'valorMultiplicador': '0.8',
-        'textOption': 'Enduido'
-    }, {
-        'valorMultiplicador': '1.6',
-        'textOption': 'Madera'
-    }, {
-        'valorMultiplicador': '1.6',
-        'textOption': 'Metal'
-    },
+let dataSelect = [{
+    'class': 'reboqueEnduido',
+    'InfoCampo': 'Reboque'
+}, {
+    'class': 'reboqueEnduido',
+    'InfoCampo': 'Enduido'
+}, {
+    'class': 'reboqueEnduido',
+    'InfoCampo': 'Madera'
+}, {
+    'class': 'reboqueEnduido',
+    'InfoCampo': 'Metal'
+},{
+    'class': 'madera',
+    'InfoCampo': 'Reboque'
+}, {
+    'class': 'madera',
+    'InfoCampo': 'Enduido'
+}, {
+    'class': 'madera',
+    'InfoCampo': 'Madera'
+}, {
+    'class': 'metal',
+    'InfoCampo': 'Metal'
+}, {
+    'class': 'metal',
+    'InfoCampo': 'Metal'
+}
 ]
 
-//222222222222222222222222222222222222222222222
-let dataselect01 = [{
+
+//SSSSSSEEEEEELLLLLEEEEECCCCTTTTTTTTTTTTTTTTTTTTTTTTTTT
+
+////////////////////////////////////////////////////
+
+
+//000000000000000000000000000000000000000000000000000
+
+
+let dataOption00 = [{
+    'valorMultiplicador': '1',
+    'textOption': 'Reboque'
+}, {
+    'valorMultiplicador': '0.8',
+    'textOption': 'Enduido'
+}, {
+    'valorMultiplicador': '1.6',
+    'textOption': 'Madera'
+}, {
+    'valorMultiplicador': '1.7',
+    'textOption': 'Metal'
+},
+]
+
+//1111111111111111111111111111111111111111111111111
+
+
+let dataOption01 = [{
     'valorMultiplicador': '0.9',
     'textOption': 'Lisa'
 }, {
@@ -31,9 +72,9 @@ let dataselect01 = [{
 },
 ]
 
-//33333333333333333333333333333333333333333333333333333333
+//222222222222222222222222222222222222222222222
 
-let dataselect02 = [{
+let dataOption02 = [{
     'valorMultiplicador': '0.9',
     'textOption': 'Optimas condiciones'
 }, {
@@ -45,9 +86,9 @@ let dataselect02 = [{
 }
 ]
 
-//444444444444444444444444444444444444444444444444444444
+//33333333333333333333333333333333333333333333333333333333
 
-let dataselect03 = [{
+let dataOption03 = [{
     'valorMultiplicador': '1',
     'textOption': 'Blanco'
 }, {
@@ -60,9 +101,9 @@ let dataselect03 = [{
 ]
 
 
-//5555555555555555555555555555555555555555555555555555
+//444444444444444444444444444444444444444444444444444444
 
-let dataselect04 = [{
+let dataOption04 = [{
     'valorMultiplicador': '1',
     'textOption': 'Blanco'
 }, {
@@ -71,13 +112,70 @@ let dataselect04 = [{
 }, {
     'valorMultiplicador': '1.3',
     'textOption': 'Color Oscuro'
+}
+]
+
+//5555555555555555555555555555555555555555555555555555
+
+
+let dataOption05 = [{
+    'valorMultiplicador': '1',
+    'textOption': 'Opcion01'
+}, {
+    'valorMultiplicador': '1',
+    'textOption': 'Opcion02'
+}, {
+    'valorMultiplicador': '1',
+    'textOption': 'Opcion03'
+}, {
+    'valorMultiplicador': '1',
+    'textOption': 'Opcion04'
 }
 ]
 
 //666666666666666666666666666666666666666666666666
 
 
-let dataselect05 = [{
+let dataOption06 = [{
+    'valorMultiplicador': '1',
+    'textOption': 'prueba'
+}, {
+    'valorMultiplicador': '1',
+    'textOption': 'Opcion02'
+}, {
+    'valorMultiplicador': '1',
+    'textOption': 'Opcion03'
+}, {
+    'valorMultiplicador': '1',
+    'textOption': 'Opcion04'
+}
+]
+
+
+// //77777777777777777777777777777777777777777777777777777777
+
+
+let dataOption07 = [{
+    'valorMultiplicador': '1',
+    'textOption': 'Opcion01'
+}, {
+    'valorMultiplicador': '1',
+    'textOption': 'Opcion02'
+}, {
+    'valorMultiplicador': '1',
+    'textOption': 'Opcion03'
+}, {
+    'valorMultiplicador': '1',
+    'textOption': 'Opcion04'
+}
+]
+
+
+// //88888888888888888888888888888888888888888888888888888
+
+
+
+let dataOption08 = [{
     'valorMultiplicador': '1',
     'textOption': 'Opcion01'
 }, {
