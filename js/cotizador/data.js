@@ -1,360 +1,136 @@
 //SSSSSSEEEEEELLLLLEEEEECCCCTTTTTTTTTTTTTTTTTTTTTTTTTTT
 
-let reboqueDataSelect = [{
-    'id':'idreboque00',
+let dataSelect = [{
     'class': 'reboqueEnduido',
-    'InfoCampo': 'Reboque'
+    'InfoCampo': 'Especifique el tipo de terminacion de la superficie'
 }, {
-    'id':'idreboque01',
-    'class': 'reboqueEnduido',
-    'InfoCampo': 'Enduido'
+    'class': 'todos',
+    'InfoCampo': 'Condiciones de la superficie'
 }, {
-    'id':'idreboque02',
-    'class': 'reboqueEnduido',
-    'InfoCampo': 'Madera'
+    'class': 'madera',
+    'InfoCampo': 'Caracteristicas de la superficie'
 }, {
-    'id':'idreboque03',
-    'class': 'reboqueEnduido',
-    'InfoCampo': 'Metal'
+    'class': 'metal',
+    'InfoCampo': 'Caracteristicas de la superficie metálica'
 },{
-    'id':'idreboque04',
-    'class': 'reboqueEnduido',
-    'InfoCampo': 'Reboque'
+    'class': 'todos',
+    'InfoCampo': 'Caracteristicas de color'
 }, {
-    'id':'idreboque05',
-    'class': 'reboqueEnduido',
-    'InfoCampo': 'Enduido'
+    'class': 'metal',
+    'InfoCampo': 'Tipo de metal'
 }
 ]
 
 
-let maderaDataSelect = [{
-    'id':'idMadera00',
-    'class': 'madera',
-    'InfoCampo': 'Tipo de madera'
-}, {'id':'idMadera01',
-    'class': 'madera',
-    'InfoCampo': 'Estado de la Superficie'
-}, {'id':'idMadera02',
-    'class': 'madera',
-    'InfoCampo': 'terminacion actual'
-}, {'id':'idMadera03',
-    'class': 'madera',
-    'InfoCampo': 'Terminacion a aplicar'
-},{'id':'idMadera04',
-    'class': 'madera',
-    'InfoCampo': 'otra pregunta'
-},{'id':'idMadera05',
-'class': 'madera',
-'InfoCampo': 'otra pregunta'
-}
-]
-
-
-let metalDataSelect = [{
-    'id':'idMetal00',
-    'class': 'metal',
-    'InfoCampo': 'Tipo de madera'
-}, {'id':'idMetal01',
-    'class': 'metal',
-    'InfoCampo': 'Estado de la Superficie'
-}, {'id':'idMetal02',
-    'class': 'metal',
-    'InfoCampo': 'terminacion actual'
-}, {'id':'idMetal03',
-    'class': 'metal',
-    'InfoCampo': 'Terminacion a aplicar'
-},{'id':'idMetal04',
-    'class': 'metal',
-    'InfoCampo': 'otra pregunta'
-},{'id':'idMetal05',
-'class': 'metal',
-'InfoCampo': 'otra pregunta'
-}
-]
 //SSSSSSEEEEEELLLLLEEEEECCCCTTTTTTTTTTTTTTTTTTTTTTTTTTT
 
 ////////////////////////////////////////////////////
 
-
+//optionssssssssssssssssssssssssssssssssssssssssss
 //000000000000000000000000000000000000000000000000000
 
+//REBOQUE ENDUIDO O SIDING
 
-let reboqueDataOpt00 = [{
+let optData00 = [{
     'valorMultiplicador': '1',
-    'textOption': 'Reboque'
+    'textOption': 'Enduido o Siding'
+},{
+    'valorMultiplicador': '1.1',
+    'textOption': 'Reboque fino'
 }, {
-    'valorMultiplicador': '0.8',
-    'textOption': 'Enduido'
+    'valorMultiplicador': '1.2',
+    'textOption': 'reboque grueso o textura Gruesa'
+}, {
+    'valorMultiplicador': '1.3',
+    'textOption': 'reboque tipo ballet o rustico'
 }, {
     'valorMultiplicador': '1.6',
-    'textOption': 'Madera'
+    'textOption': 'Ladrillo a la vista'
+},
+]
+
+//1111111111111111111111111111111111111111111111111
+
+//TODOS TODOS TODOS
+
+let optData01 = [{
+    'valorMultiplicador': '0.9',
+    'textOption': 'Optimas condiciones'
+}, {
+    'valorMultiplicador': '1.3',
+    'textOption': 'Con detalles y pintura descascarada'
+}, {
+    'valorMultiplicador': '1.5',
+    'textOption': 'Muy deteriorado'
+}
+]
+
+//222222222222222222222222222222222222222222222
+
+//MADERA MADERA MADERA
+
+let optData02 =[{
+    'valorMultiplicador': '3',
+    'textOption': 'lambriz'
+}, {
+    'valorMultiplicador': '3.3',
+    'textOption': 'Pergola'
+}, {
+    'valorMultiplicador': '3',
+    'textOption': 'Piso de madera'
+}, {
+    'valorMultiplicador': '40',
+    'textOption': 'Puertas interior'
+}, {
+    'valorMultiplicador': '50',
+    'textOption': 'Puertas exterior'
+},
+]
+
+//33333333333333333333333333333333333333333333333333333333
+
+//METAL METAL METAL
+
+let optData03 = [{
+    'valorMultiplicador': '2',
+    'textOption': 'Chapa galbanizada acanalada'
 }, {
     'valorMultiplicador': '1.7',
-    'textOption': 'Metal'
-},
-]
-
-//1111111111111111111111111111111111111111111111111
-
-
-let reboqueDataOpt01 = [{
-    'valorMultiplicador': '1',
-    'textOption': 'madera'
+    'textOption': 'Chapa galbanizada lisa'
 }, {
-    'valorMultiplicador': '0.8',
-    'textOption': 'Enduido'
+    'valorMultiplicador': '3',
+    'textOption': 'Chapa de hierro'
 }, {
-    'valorMultiplicador': '1.6',
-    'textOption': 'Madera'
-}, {
-    'valorMultiplicador': '1.7',
-    'textOption': 'Metal'
-},
-]
-
-//222222222222222222222222222222222222222222222
-
-let reboqueDataOpt02 = [{
-    'valorMultiplicador': '0.9',
-    'textOption': 'Optimas condiciones'
-}, {
-    'valorMultiplicador': '1.3',
-    'textOption': 'Con detalles y pintura descascarada'
-}, {
-    'valorMultiplicador': '1.5',
-    'textOption': 'Muy deteriorado'
-}
-]
-
-//33333333333333333333333333333333333333333333333333333333
-
-let reboqueDataOpt03 = [{
-    'valorMultiplicador': '1',
-    'textOption': 'Blanco'
-}, {
-    'valorMultiplicador': '1.1',
-    'textOption': 'Color claro'
-}, {
-    'valorMultiplicador': '1.3',
-    'textOption': 'Color Oscuro'
+    'valorMultiplicador': '3',
+    'textOption': 'rejas de hierro'
 }
 ]
 
 
 //444444444444444444444444444444444444444444444444444444
 
-let reboqueDataOpt04 = [{
-    'valorMultiplicador': '1',
-    'textOption': 'Blanco'
+//TODOS TODOS TODOS
+
+let optData04 = [{
+    'valorMultiplicador': '1.5',
+    'textOption': 'Superficie sin pintura actualmente'
 }, {
-    'valorMultiplicador': '1.1',
-    'textOption': 'Color claro'
+    'valorMultiplicador': '1',
+    'textOption': 'El color Original es blanco y se pintará con blanco'
 }, {
     'valorMultiplicador': '1.3',
-    'textOption': 'Color Oscuro'
-}
-]
-
-//5555555555555555555555555555555555555555555555555555
-
-
-let reboqueDataOpt05 = [{
-    'valorMultiplicador': '1',
-    'textOption': 'Opcion01'
-}, {
-    'valorMultiplicador': '1',
-    'textOption': 'Opcion02'
-}, {
-    'valorMultiplicador': '1',
-    'textOption': 'Opcion03'
-}, {
-    'valorMultiplicador': '1',
-    'textOption': 'Opcion04'
-}
-]
-
-//MMMMMADDDEEEERRRAAAAAAAAAAAAAAAAAAAAAAAAAA
-//000000000000000000000000000000000000000000000000000
-
-
-let maderaDataOpt00 = [{
-    'valorMultiplicador': '0.9',
-    'textOption': 'madera Lisa'
-}, {
-    'valorMultiplicador': '1',
-    'textOption': ' madera Textura fina'
-}, {
-    'valorMultiplicador': '1.5',
-    'textOption': 'madera Textura gruesa'
-},
-]
-
-//1111111111111111111111111111111111111111111111111
-
-
-let maderaDataOpt01 = [{
-    'valorMultiplicador': '0.9',
-    'textOption': 'Lisa'
-}, {
-    'valorMultiplicador': '1',
-    'textOption': 'Textura fina'
-}, {
-    'valorMultiplicador': '1.5',
-    'textOption': 'Textura gruesa'
+    'textOption': 'El color actual es similar al que se usará'
 }, {
     'valorMultiplicador': '2',
-    'textOption': 'Ladrillo visto'
+    'textOption': 'El color actual y el nuevo son diferente en intensidad y tonalidad'
 },
-]
-
-//222222222222222222222222222222222222222222222
-
-let maderaDataOpt02 = [{
-    'valorMultiplicador': '0.9',
-    'textOption': 'Optimas condiciones'
-}, {
-    'valorMultiplicador': '1.3',
-    'textOption': 'Con detalles y pintura descascarada'
-}, {
-    'valorMultiplicador': '1.5',
-    'textOption': 'Muy deteriorado'
-}
-]
-
-//33333333333333333333333333333333333333333333333333333333
-
-let maderaDataOpt03 = [{
-    'valorMultiplicador': '1',
-    'textOption': 'Blanco'
-}, {
-    'valorMultiplicador': '1.1',
-    'textOption': 'Color claro'
-}, {
-    'valorMultiplicador': '1.3',
-    'textOption': 'Color Oscuro'
-}
-]
-
-
-//444444444444444444444444444444444444444444444444444444
-
-let maderaDataOpt04 = [{
-    'valorMultiplicador': '1',
-    'textOption': 'Blanco'
-}, {
-    'valorMultiplicador': '1.1',
-    'textOption': 'Color claro'
-}, {
-    'valorMultiplicador': '1.3',
-    'textOption': 'Color Oscuro'
-}
-]
+] 
 
 //5555555555555555555555555555555555555555555555555555
 
+//
 
-let maderaDataOpt05 = [{
-    'valorMultiplicador': '1',
-    'textOption': 'Opcion01'
-}, {
-    'valorMultiplicador': '1',
-    'textOption': 'Opcion02'
-}, {
-    'valorMultiplicador': '1',
-    'textOption': 'Opcion03'
-}, {
-    'valorMultiplicador': '1',
-    'textOption': 'Opcion04'
-}
-]
-
-
-//mmmmmmmmmmmmmm
-//eeeeeeeeeeeeee
-//tttttttttttttt
-//aaaaaaaaaaaaaa
-//llllllllllllll
-//000000000000000000000000000000000000000000000000000
-
-
-let metalDataOpt00 = [{
-    'valorMultiplicador': '0.9',
-    'textOption': 'madera Lisa'
-}, {
-    'valorMultiplicador': '1',
-    'textOption': ' madera Textura fina'
-}, {
-    'valorMultiplicador': '1.5',
-    'textOption': 'madera Textura gruesa'
-},
-]
-
-//1111111111111111111111111111111111111111111111111
-
-
-let metalDataOpt01 = [{
-    'valorMultiplicador': '0.9',
-    'textOption': 'Lisa'
-}, {
-    'valorMultiplicador': '1',
-    'textOption': 'Textura fina'
-}, {
-    'valorMultiplicador': '1.5',
-    'textOption': 'Textura gruesa'
-}, {
-    'valorMultiplicador': '2',
-    'textOption': 'Ladrillo visto'
-},
-]
-
-//222222222222222222222222222222222222222222222
-
-let metalDataOpt02 = [{
-    'valorMultiplicador': '0.9',
-    'textOption': 'Optimas condiciones'
-}, {
-    'valorMultiplicador': '1.3',
-    'textOption': 'Con detalles y pintura descascarada'
-}, {
-    'valorMultiplicador': '1.5',
-    'textOption': 'Muy deteriorado'
-}
-]
-
-//33333333333333333333333333333333333333333333333333333333
-
-let metalDataOpt03 = [{
-    'valorMultiplicador': '1',
-    'textOption': 'Blanco'
-}, {
-    'valorMultiplicador': '1.1',
-    'textOption': 'Color claro'
-}, {
-    'valorMultiplicador': '1.3',
-    'textOption': 'Color Oscuro'
-}
-]
-
-
-//444444444444444444444444444444444444444444444444444444
-
-let metalDataOpt04 = [{
-    'valorMultiplicador': '1',
-    'textOption': 'Blanco'
-}, {
-    'valorMultiplicador': '1.1',
-    'textOption': 'Color claro'
-}, {
-    'valorMultiplicador': '1.3',
-    'textOption': 'Color Oscuro'
-}
-]
-
-//5555555555555555555555555555555555555555555555555555
-
-
-let metalDataOpt05 = [{
+let optData05 = [{
     'valorMultiplicador': '1',
     'textOption': 'Opcion01'
 }, {

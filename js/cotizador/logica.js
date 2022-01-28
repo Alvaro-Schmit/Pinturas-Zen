@@ -2,175 +2,196 @@
 
 let selectContainer = document.getElementById('selectContainer')
 
-function loadSelect(dataSelect) {
-    let carga = true
-    if (carga !=true) {
-        console.log('no carga');
-    } else {
-        dataSelect.forEach((data2) => {
-
-            selectContainer.innerHTML += `<div class="${data2.class}" ><p>${data2.InfoCampo}</p><select id="${data2.id}" class="select"></select></div>`
-        });  
-    }
-   
-}
 
 
-//funcion que carga etiquetas option
-function getElement() {
-let idreboque00 = document.getElementById('idreboque00');
-let idreboque01 = document.getElementById('idreboque01');
-let idreboque02 = document.getElementById('idreboque02');
-let idreboque03 = document.getElementById('idreboque03');
-let idreboque04 = document.getElementById('idreboque04');
-let idreboque05 = document.getElementById('idreboque05');
-}
+dataSelect.forEach((data, i) => {
+    selectContainer.innerHTML += `<div class="${data.class}" ><p>${data.InfoCampo}</p><select id="select${i}" class="select"></select></div>`
+})
 
-function getElementMadera() {
-    let idMadera00 = document.getElementById('idMadera00');
-    let idMadera01 = document.getElementById('idMadera01');
-    let idMadera02 = document.getElementById('idMadera02');
-    let idMadera03 = document.getElementById('idMadera03');
-    let idMadera04 = document.getElementById('idMadera04');
-    let idMadera05 = document.getElementById('idMadera05');
-    }
-    function getElementMetal() {
-        let idMetal00 = document.getElementById('idMetal00');
-        let idMetal01 = document.getElementById('idMetal01');
-        let idMetal02 = document.getElementById('idMetal02');
-        let idMetal03 = document.getElementById('idMetal03');
-        let idMetal04 = document.getElementById('idMetal04');
-        let idMetal05 = document.getElementById('idMetal05');
-        }
+
+//id de etiquetas select 
+
+let select0 = document.getElementById('select0');
+let select1 = document.getElementById('select1');
+let select2 = document.getElementById('select2');
+let select3 = document.getElementById('select3');
+let select4 = document.getElementById('select4');
+let select5 = document.getElementById('select5');
+
+//funcion que carga las etiquetas option
 
 function loadOptions(select0X, dataOption0X) {
     dataOption0X.forEach(data => {
-    select0X.innerHTML +=`<option value="${data.valorMultiplicador}">${data.textOption}</option>`;
+        select0X.innerHTML += `<option value="${data.valorMultiplicador}">${data.textOption}</option>`;
     });
 }
 
+loadOptions(select0, optData00);
+loadOptions(select1, optData01);
+loadOptions(select2, optData02);
+loadOptions(select3, optData03);
+loadOptions(select4, optData04);
+loadOptions(select5, optData05);
 
-function toReboqueEnduido() {
-    loadOptions(idreboque00,reboqueDataOpt00);
-    loadOptions(idreboque01,reboqueDataOpt01);
-    loadOptions(idreboque02,reboqueDataOpt02);
-    loadOptions(idreboque03,reboqueDataOpt03);
-    loadOptions(idreboque04,reboqueDataOpt04);
-    loadOptions(idreboque05,reboqueDataOpt05);
+//trayendo los select por  clases y los  guardando en variable
+
+
+let reboqueEnduido = document.querySelectorAll('.reboqueEnduido');
+let madera = document.querySelectorAll('.madera');
+let metal = document.querySelectorAll('.metal');
+let todos = document.querySelectorAll('.todos');
+let metraje = document.getElementById('metraje')
+
+//los inicio con diplay 'none'
+
+reboqueEnduido.forEach(element => element.style.display = "none");
+madera.forEach(element => element.style.display = "none");
+metal.forEach(element => element.style.display = "none");
+todos.forEach(element => element.style.display = "none");
+metraje.style.display ='none'
+
+//traigo el select de materiales para luego darle una funcion que dependiendo
+//el material ejejido me deje lo que necesito en el fformulario de multiple opcion.
+
+let selectMaterial = document.getElementById('selectMaterial');
+
+//llamo por id el boton de cotizar y volver a cotizar
+let butoonCotizar = document.getElementById('cotizar');
+let volverACotizar = document.getElementById('volverACotizar')
+
+//llamo por id el p que contiene el texto del metraje o cantidad por unidad
+let metroUnidad = document.getElementById('metroUnidad')
+
+//dejo los botones en diplay none
+butoonCotizar.style.display='none';
+volverACotizar.style.visibility='hidden';
+
+//creo el evento para habrir menu de preguntas segun el material elegido
+
+selectMaterial.addEventListener('change', selectData);
+
+function selectData() {
+
+    butoonCotizar.style.display='block';
+    metraje.style.display ='block'
+    todos.forEach(element => element.style.display = "block");
+
+
+   
+
+    if (selectMaterial.value == 'reboque' || selectMaterial.value =='enduido' || selectMaterial.value =='siding' ) {
+        //borrar select que no son utiles para Material reboque o enduido
+        madera.forEach(element => element.style.display = "none");
+        metal.forEach(element => element.style.display = "none");
+        //cargar select para reboque y enduido
+        reboqueEnduido.forEach(element => element.style.display = "block");
+
+
+    } else if (selectMaterial.value === 'madera') {
+        //borrar select que no son utiles para Material madera
+        reboqueEnduido.forEach(element => element.style.display = "none");
+        metal.forEach(element => element.style.display = "none");
+
+        //cargar select para madera
+        madera.forEach(element => element.style.display = "block");
+       
+      
+    } else if (selectMaterial.value === 'metal') {
+        //borrar select que no son utiles para Material metal
+        reboqueEnduido.forEach(element => element.style.display = "none");
+        madera.forEach(element => element.style.display = "none");
+
+        //cargar select para madera
+        metal.forEach(element => element.style.display = "block");
+       
+    }
+
+
 }
 
+//traigo el evento change del select2 para rescatar su value y cambiar el valor del input metros por cantidad.
 
-function toMadera() {
-    loadOptions(idMadera00,maderaDataOpt00);
-    loadOptions(idMadera01,maderaDataOpt01);
-    loadOptions(idMadera02,maderaDataOpt02);
-    loadOptions(idMadera03,maderaDataOpt03);
-    loadOptions(idMadera04,maderaDataOpt04);
-    loadOptions(idMadera05,maderaDataOpt05);
-}
+metroUnidad.textContent = "Ingresa los metros a pintar";
 
-function toMetal() {
-    loadOptions(idMetal00,MetalDataOpt00);
-    loadOptions(idMetal01,MetalDataOpt01);
-    loadOptions(idMetal02,MetalDataOpt02);
-    loadOptions(idMetal03,MetalDataOpt03);
-    loadOptions(idMetal04,MetalDataOpt04);
-    loadOptions(idMetal05,MetalDataOpt05);
-}
-
-
-//DIV contenedores de select con display none para iniciarlos no visibles
-
-// let reboqueEnduido = document.querySelectorAll('.reboqueEnduido');
-// let madera = document.querySelectorAll('.madera');
-// let metal = document.querySelectorAll('.metal');
-// let despliegueMenu = document.getElementById('despliegueMenu')
- 
- 
-//  reboqueEnduido.forEach(element =>  element.style.display = "none");
-//  madera.forEach(element =>  element.style.display = "none");
-//  metal.forEach(element =>  element.style.display = "none");
-
-
-// funcion que hace aparecer los select segun la eleccion de materiales
-
-
-
-
-
-selectMaterial.addEventListener('change', selectData= ()=> {
-
+select2.addEventListener('change', selectFuntion2=()=>{
+    console.log(select2.value);
+    (select2.value ==='40' || select2.value ==='50' )?metroUnidad.textContent = "Ingresa la cantidad de puertas a Pintar":metroUnidad.textContent = "Ingresa los metros a pintar";
+   return select2.value 
+})
   
-   
-if (selectMaterial.value == 'reboque') {
-    let madera = document.querySelectorAll('.madera');
-    madera.forEach(element =>  element.style.display = "none");
+//comienzo a rescatar valores necesarios para la operacion de cotizacion
+
+let valorMetroCuadrado = 100
+
+let metrosIngresados= document.getElementById('metrosIngresados')
 
 
-    loadSelect(reboqueDataSelect);
-   getElement()
-   toReboqueEnduido();
-   eventoChange()
-   
-}
- else if (selectMaterial.value == 'madera') {
-   let reboqueEnduido = document.querySelectorAll('.reboqueEnduido');
-    
- reboqueEnduido.forEach(element =>  element.style.display = "none");
- loadSelect(maderaDataSelect);
- getElementMadera()
-   toMadera();
-  
-  
-}
-else if (selectMaterial.value == 'metal') {
-    let reboqueEnduido = document.querySelectorAll('.reboqueEnduido');
-     
-  reboqueEnduido.forEach(element =>  element.style.display = "none");
-  loadSelect(metalDataSelect);
-  getElementMetal()
-    toMetal();
-   
-   
+ function innerMeters() {
+     console.log(metrosIngresados.value);
+return metrosIngresados.value
  }
 
-  
-  });
+metrosIngresados.addEventListener('input', innerMeters)
 
-// funcion evento change de los select
-function eventoChange() {
-    
+//traigo valores de los demas select
 
-idreboque00.addEventListener('change', idreboqueData0= ()=> idreboque00.value);
-idreboque01.addEventListener('change', idreboqueData1= ()=> idreboque01.value) ;
-idreboque02.addEventListener('change', idreboqueData2= ()=> idreboque02.value) ;
-idreboque03.addEventListener('change', idreboqueData3= ()=> idreboque03.value) ;
-idreboque04.addEventListener('change', idreboqueData4= ()=> idreboque04.value) ;
-idreboque05.addEventListener('change', idreboqueData5= ()=> idreboque05.value) ;
-}
+select0.addEventListener('change', selectFuntion0= ()=> select0.value);
+select1.addEventListener('change', selectFuntion1= ()=> select1.value);
+//el select2 esta en la linea 111
+select3.addEventListener('change', selectFuntion3= ()=> select3.value);
+select4.addEventListener('change', selectFuntion4= ()=> select4.value);
+select5.addEventListener('change', selectFuntion5= ()=> select5.value);
+let resultado =0
+console.log(resultado);
 
-// evento click de cotizar
-
-let metrosIngresados = document.getElementById('metrosIngresados')
-function metros() {
- 
-    return metrosIngresados.value
-}
-metrosIngresados.addEventListener('input', metros)
-
-let butoonCotizar = document.getElementById('cotizar')
+// texto donde se va arrojar el resultado
 
 let resultadoEnPantalla = document.getElementById('resultadoEnPantalla')// resultado en pantalla
 
 
-function cotizar() {
-   let precioXmetro = 100
-    let resultado = `${precioXmetro}` *`${metros()}` * `${idreboqueData0()}`* `${idreboqueData1()}`* `${idreboqueData2()}`* `${idreboqueData3()}`* `${idreboqueData4()}`* `${idreboqueData5()}`//aca tengo que sumar los otros valores
-    console.log(resultado);
-  
-resultadoEnPantalla.innerHTML= `El resultado de la cotización segun los valores ingresados es : $ ${resultado}`
+function operarValores() {
+    volverACotizar.style.visibility='inherit';
+    resultadoEnPantalla.style.visibility='inherit'
+resultado=0
+
+
+    if (selectMaterial.value == 'reboque' || selectMaterial.value =='enduido' || selectMaterial.value =='siding') {
+        resultado = `${innerMeters()}` * `${valorMetroCuadrado}`*`${selectFuntion0()}`*`${selectFuntion1()}`*`${selectFuntion4()}`
+        console.log(resultado);   
+    }else if (selectMaterial.value === 'madera') {
+        resultado = `${innerMeters()}` * `${valorMetroCuadrado}`*`${selectFuntion1()}`*`${selectFuntion2()}`*`${selectFuntion4()}`
+        console.log(resultado); 
+    }else if (selectMaterial.value === 'metal') {
+        resultado = `${innerMeters()}` * `${valorMetroCuadrado}`*`${selectFuntion1()}`*`${selectFuntion3()}`*`${selectFuntion5()}`
+        console.log(resultado); 
+    }
+
+    // texto donde se va arrojar el resultado
+ 
+
+resultadoEnPantalla.textContent= `El resultado de la cotización segun los valores ingresados es : $ ${resultado}`
+
+    
 }
 
-butoonCotizar.addEventListener('click', cotizar);
-console.log(metros());
+
+butoonCotizar.addEventListener('click', operarValores)
+
+//funcion de volver a cotizar
+
+volverACotizar.addEventListener('click', functionBorrar)
+
+function functionBorrar() {
+    console.log('soy volver a cotizar');
+    madera.forEach(element => element.style.display = "none");
+        metal.forEach(element => element.style.display = "none"); 
+        reboqueEnduido.forEach(element => element.style.display = "none");
+        todos.forEach(element => element.style.display = "none");
+        metraje.style.display ='none'
+        butoonCotizar.style.display='none';
+        volverACotizar.style.visibility='hidden';
+resultadoEnPantalla.style.visibility='hidden'
+metrosIngresados.value=NaN
+        
+}
 

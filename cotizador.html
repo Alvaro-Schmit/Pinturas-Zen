@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="./css/style33.css" />
   <link rel="stylesheet" href="./css/navBar.css" />
 
-  <link rel="stylesheet" href="./css/cotizar.css" />
+  <link rel="stylesheet" href="./css/cotizador.css" />
 </head>
 
 <body>
@@ -58,44 +58,39 @@
       <span id="pinturasInteriores"></span>
     </nav>
   </header>
-  <br /><br /><br /><br /><br /><br />
-
-
+  
   <section id="cotizadorContainer">
     <form action="">
       <div id="divMaterial">
-        <p>Selecciona el material de la superficie</p>
-        <select name="" id="selectMaterial" class="select">
-          <option id="despliegueMenu"  value="reboque" style="font-weight: bold;">Elija un material</option>
-          <option  value="reboque">Reboque</option>
-          <option  value="enduido">Enduido</option>
-          <option  value="madera">Madera</option>
-          <option  value="metal">Metal</option>
-        </select></div>
+        <p>Seleccione el material de la superficie que va a ser pintada.</p>
+        <select name="" id="selectMaterial" class="select" >
+          <option value="reboque">Elije una opción</option>
+          <option value="reboque">Reboque</option>
+          <option value="enduido">Enduido</option>
+          <option value="madera">Madera</option>
+          <option value="metal">Metal</option>
+          <option value="siding">Siding</option>
+        </select>
+      </div>
+
+      <span id="selectContainer"></span>
       <div id="metraje">
         <label for="metraje">
-          <p>Ingresa los metros a pintar</p>
+          <p id="metroUnidad"></p>
         </label>
         <br />
         <input placeholder="metros" id="metrosIngresados" type="number" name="metraje" />
       </div>
-      <span id="selectContainer"></span>
-      <div>
-        <label for="metraje">
-          <p>Escribe la localidad o ciudad.</p>
-        </label>
-        <br />
-        <input placeholder="Localidad" id="input01" type="text" name="metraje" />
-      </div>
-
-      <div class="select" id="divbutton">
+      <div class="select" id="divbutoon">
         <button id="cotizar" type="button">cotizar</button>
+        <button id="volverACotizar" type="button">Volver a cotizar</button>
+        
       </div>
     </form>
     <h3 id="resultadoEnPantalla"></h3>
   </section>
 
-  <br /><br /><br /><br /><br /><br />
+
 
   <footer>
     <div style="height: 150px; overflow: hidden">
@@ -107,8 +102,8 @@
   </footer>
 
   <script src="./js/bootstrap.bundle.min.js"></script>
-  <script src="./js/cotizador2/2data2.js"></script>
-  <script src="./js/cotizador2/2logica2.js"></script>
+  <script src="./js/cotizador/data.js"></script>
+  <script src="./js/cotizador/logica.js"></script>
 </body>
 
 </html>
