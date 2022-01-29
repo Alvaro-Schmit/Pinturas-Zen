@@ -159,6 +159,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(7, 1fr);
+    padding: 5px;
     }
     #card-01 {
         /* border: solid 0.5px rgba(80, 48, 48, 0.2); */

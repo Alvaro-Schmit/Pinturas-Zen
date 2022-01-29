@@ -13,6 +13,7 @@ body{
 
 #formid{
     width: 560px;
+    max-width: 95%;
     margin:auto;
     background: rgba(26, 17, 2, 0.719);
 padding: 10px 20px;
@@ -66,7 +67,7 @@ padding: 12px;
 
 @media (max-width:480px) {
 form{
-    width: 100%;
+   
 
 }
 

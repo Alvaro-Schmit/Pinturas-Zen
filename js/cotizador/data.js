@@ -33,10 +33,10 @@ let dataSelect = [{
 
 let optData00 = [{
     'valorMultiplicador': '1',
-    'textOption': 'Enduido o Siding'
+    'textOption': 'Enduido o Isopanel'
 },{
     'valorMultiplicador': '1.1',
-    'textOption': 'Reboque fino'
+    'textOption': 'Reboque fino o Siding'
 }, {
     'valorMultiplicador': '1.2',
     'textOption': 'reboque grueso o textura Gruesa'
