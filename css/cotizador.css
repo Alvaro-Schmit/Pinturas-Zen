@@ -1,4 +1,8 @@
 #cotizadorContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
     margin-top: 160px;
     margin-bottom: 160px;
 }

@@ -3,12 +3,10 @@ body {
 }
 
 .sectionIngresoCotizador{
-
-
     margin:auto;
     margin-top: 120px;
     width: 980px;
-  
+  max-width: 90%;
     background: rgba(26, 17, 2, 0.719);
 padding: 10px 20px;
 box-sizing: border-box;
