@@ -191,7 +191,9 @@ function functionBorrar() {
         butoonCotizar.style.display='none';
         volverACotizar.style.visibility='hidden';
 resultadoEnPantalla.style.visibility='hidden'
-metrosIngresados.value=NaN
+metrosIngresados.value=''
+selectMaterial.value='elije'
         
 }
+
 

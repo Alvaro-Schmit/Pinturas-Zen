@@ -8,17 +8,7 @@
 }
 
 
-.galeryExteriores {
-    width: 440px;
-    height: 360px;
-    padding: 2%;
-}
 
-.galeryExteriores img {
-    height: 80%;
-    width: 100%;
-    object-fit: cover;
-}
 
 .h3galeria {
     margin-top: 10px;
@@ -34,6 +24,7 @@
 .flexDiv {
     width: 400px;
     height: auto;
+    max-height: 260px;
     aspect-ratio: 20/16;
     object-fit: cover;
 }
@@ -55,16 +46,13 @@
 
 
 @media (max-width: 640px) {
-    .galeryExteriores {
-        width: 380px;
-        height: 300px;
-        padding: 2%;
-    }
+   
 
     .flexDiv {
         width: 400px;
         max-width: 90%;
         height: auto;
+        max-height: 220px;
         aspect-ratio: 20/16;
         object-fit: cover;
     }
@@ -72,4 +60,17 @@
 
 
 
-@media only screen and (max-width: 1023px)and (min-width: 640px) {}
+@media only screen and (min-width: 640px)  and (max-width: 786px){
+
+    
+    .flexDiv {
+        width: 300px;
+        max-width: 90%;
+        height: auto;
+        max-height: 200px;
+        aspect-ratio: 20/16;
+        object-fit: cover;
+    }
+    
+
+}

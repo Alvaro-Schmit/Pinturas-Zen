@@ -23,6 +23,7 @@ let loadGalery2 = (tag) => {
   //document.getElementById('galery').style.display='block';
 
   document.getElementById('galeryLightBox').innerHTML = "";
+  // document.getElementById('img-activa').src = "";
 
   let object = imagenes[tag.id];
 
@@ -44,8 +45,8 @@ let navBar = document.getElementById('header')
 
 const abreLightbox = (event) => {
   console.log(event);
-  // imagenActiva.src = event.target.src;
-   imagenActiva.src = ulImagenes[0].src;
+  imagenActiva.src = event.target.src;
+  //  imagenActiva.src = ulImagenes[0].src;
   lightbox.style.display = 'flex';
 
   navBar.style.display = 'none';
@@ -71,6 +72,7 @@ const retrocederImagen = () => {
   imagenActiva.src = ulImagenes[indiceImagen - 1].src;
   indiceImagen--;
 };
+
 
 btnRetrocede.addEventListener('click', retrocederImagen);
 
