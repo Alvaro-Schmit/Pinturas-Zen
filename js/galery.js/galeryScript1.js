@@ -107,17 +107,30 @@ document.getElementById('img016').addEventListener('click', abreLightbox);
 
 let abrir1 = document.getElementById('card-01', )
 let verMas = document.getElementById('verMas1')
+let everyImage =document.querySelectorAll('.escalar_hover')
 
-function enterImg() {
+function enterImg(e) {
   verMas.style.display = 'block'
-  abrir1.style.filter = 'contrast(110%)';
-  let texto = abrir1.children[1].innerHTML = '<p  class=" btnImg" >Ver más &raquo;</p>';
+ let idImg = e.target;
+ idImg.style.filter = 'brightness(1.25)';
+//  idImg.children[1].innerHTML = '<p  class=" btnImg" >Ver más &raquo;</p>';
+ console.log(idImg);
 }
 
-function leaveImg() {
+function leaveImg(e) {
+  let idImgleave = e.target;
   verMas.style.display = 'none'
-  abrir1.style.filter = 'none';
+  idImgleave.style.filter = 'none';
+  console.log(idImgleave);
 }
-abrir1.addEventListener('mouseenter', enterImg);
-abrir1.addEventListener('mouseleave', leaveImg);
+everyImage.forEach(v =>{
+  v.addEventListener('mouseenter', enterImg);
+})
+everyImage.forEach(v =>{
+  v.addEventListener('mouseleave', leaveImg);
+})
+
+
+// abrir1.addEventListener('mouseenter', enterImg);
+// abrir1.addEventListener('mouseleave', leaveImg);
 // verMas.addEventListener('click', abreLightbox)

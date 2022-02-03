@@ -59,8 +59,10 @@ height: 20%;
 }
 .escalar_hover:hover{
     cursor: pointer;
-    transform: scale3d(1.03, 1.03, -5);
-    filter: drop-shadow(5px 5px 6px rgb(53, 28, 28))
+    transition: 1s;
+    transform: scale3d(1.06, 1.06, -5);
+    filter: drop-shadow(5px 5px 6px rgb(53, 28, 28));
+   
 }
 .imgCarrousel:hover{
     
