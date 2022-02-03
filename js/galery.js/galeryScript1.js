@@ -110,13 +110,14 @@ let verMas = document.getElementById('verMas1')
 
 function enterImg() {
   verMas.style.display = 'block'
-  abrir1.style.opacity = '0.8';
+  abrir1.style.filter = 'contrast(110%)';
   let texto = abrir1.children[1].innerHTML = '<p  class=" btnImg" >Ver más &raquo;</p>';
 }
 
 function leaveImg() {
   verMas.style.display = 'none'
-  abrir1.style.opacity = '1';
+  abrir1.style.filter = 'none';
 }
-// abrir1.addEventListener('mouseenter', enterImg);
-// abrir1.addEventListener('mouseleave', leaveImg);
+abrir1.addEventListener('mouseenter', enterImg);
+abrir1.addEventListener('mouseleave', leaveImg);
+// verMas.addEventListener('click', abreLightbox)
