@@ -6,6 +6,8 @@ let lightbox = document.querySelector('#contenedor-principal');
 let imagenActiva = document.querySelector('#img-activa');
 let indiceImagen = 0;
 
+let ulImagenes = document.querySelectorAll('#galeryLightBox img');
+let navBar = document.getElementById('header')
 
 /*Cierra el Lightbox */
 
@@ -18,8 +20,8 @@ document.getElementById('galery').style.display = 'none';
 
 //Entra el ID del TAG
 let loadGalery2 = (tag) => {
-  console.log(tag);
-  console.log(tag.id);
+  // console.log(tag);
+  // console.log(tag.id);
   //document.getElementById('galery').style.display='block';
 
   document.getElementById('galeryLightBox').innerHTML = "";
@@ -40,19 +42,18 @@ let loadGalery2 = (tag) => {
 
 /*Abre el Lightbox*/
 
-let ulImagenes = document.querySelectorAll('#galeryLightBox img');
-let navBar = document.getElementById('header')
 
 const abreLightbox = (event) => {
-  console.log(event);
-  imagenActiva.src = event.target.src;
-  //  imagenActiva.src = ulImagenes[0].src;
+  // console.log(event);
+  // imagenActiva.src = event.target.src;
+   imagenActiva.src = ulImagenes[0].src;
   lightbox.style.display = 'flex';
 
   navBar.style.display = 'none';
-  indiceImagen = Array.from(ulImagenes).indexOf(event.target);
-  console.log(event.target);
-  console.log(indiceImagen);
+  // indiceImagen = Array.from(ulImagenes).indexOf(event.target.src);
+  // console.log(Array.from(ulImagenes));
+  // console.log(event.target.src);
+  // console.log(indiceImagen);
 };
 
 const adelantaImagen = () => {
@@ -108,21 +109,35 @@ document.getElementById('img016').addEventListener('click', abreLightbox);
 let abrir1 = document.getElementById('card-01', )
 let verMas = document.getElementById('verMas1')
 let everyImage =document.querySelectorAll('.escalar_hover')
+let pFuntionEnter =''
+
+
 
 function enterImg(e) {
-  verMas.style.display = 'block'
  let idImg = e.target;
  idImg.style.filter = 'brightness(1.25)';
-//  idImg.children[1].innerHTML = '<p  class=" btnImg" >Ver más &raquo;</p>';
- console.log(idImg);
+ let padre = idImg.parentNode
+ let child = document.createElement('p');
+  padre.appendChild(child).textContent= 'Ver más';
+  child.setAttribute("id","pId");
+  pFuntionEnter = document.getElementById('pId');
+  
+  // pFuntionEnter.style.transform='translateX(20px)'
+  
+  // pFuntionEnter.style.transition='transform 2s'
+//   pFuntionEnter.addEventListener('click', prueba)
+// let prueba= ()=> console.log('esta es la funcion prueba');
+
 }
 
 function leaveImg(e) {
   let idImgleave = e.target;
-  verMas.style.display = 'none'
   idImgleave.style.filter = 'none';
-  console.log(idImgleave);
+  pFuntionEnter = document.getElementById('pId')
+  pFuntionEnter.remove()
 }
+
+
 everyImage.forEach(v =>{
   v.addEventListener('mouseenter', enterImg);
 })
@@ -130,7 +145,3 @@ everyImage.forEach(v =>{
   v.addEventListener('mouseleave', leaveImg);
 })
 
-
-// abrir1.addEventListener('mouseenter', enterImg);
-// abrir1.addEventListener('mouseleave', leaveImg);
-// verMas.addEventListener('click', abreLightbox)

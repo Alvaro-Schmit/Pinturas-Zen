@@ -18,6 +18,27 @@
     height: 10%;
 }
 
+.containerImg{
+    position: relative;
+}
+
+#pId{
+    width: 8rem;
+    border-left:  solid rgba(0, 0, 0, 0.493) 0.5rem;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.493);
+    color: rgba(240, 248, 255, 0.726);
+    position: absolute;
+    z-index: 20;
+bottom: 40%;
+left: 20px;
+pointer-events: none;
+
+transition: left 2s;
+}
+
 /*///////////////////////////   FLEXBOX ENDUIDO ////////////////////////*/
 
 
