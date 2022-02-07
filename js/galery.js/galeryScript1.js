@@ -122,12 +122,6 @@ function enterImg(e) {
   child.setAttribute("id","pId");
   pFuntionEnter = document.getElementById('pId');
   
-  // pFuntionEnter.style.transform='translateX(20px)'
-  
-  // pFuntionEnter.style.transition='transform 2s'
-//   pFuntionEnter.addEventListener('click', prueba)
-// let prueba= ()=> console.log('esta es la funcion prueba');
-
 }
 
 function leaveImg(e) {

@@ -59,7 +59,7 @@ height: 20%;
 }
 .escalar_hover:hover{
     cursor: pointer;
-    transition: 1s;
+    transition: 1.5s;
     transform: scale3d(1.06, 1.06, -5);
     filter: drop-shadow(5px 5px 6px rgb(53, 28, 28));
    
@@ -148,25 +148,55 @@ transition: color .5s !important;
 /*circulos de index*/
 
 .circulosContainer{
+    margin-top: 140px;
+    margin-bottom: 200px;
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;
-justify-content: space-evenly;
+justify-content: space-between;
 align-items: center;
+}
+@media (max-width: 486px){
+    .circulosContainer{
+        margin-top: 60px;
+        margin-bottom: 0px;
+        justify-content: center; 
+    }
 }
 
 .circulosIndex{
 
 width: 30%;
+height: 400px;
 min-width: 220px;
 padding: 10px;
 display: flex;
 flex-wrap: wrap;
 flex-direction: column;
-justify-content: space-around;
+justify-content: space-between;
 align-items: center;
+text-align:center
 }
 
-.circleText{
-    height: 200 px !important;
+
+
+.circle{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+   cursor: pointer;
 }
+/* 
+.circle:hover{
+   animation-name: circleAnimation;
+   animation-duration: 5s;
+  
+
+
+}
+
+@keyframes circleAnimation {
+    0% {transform: scale(1, 1);}
+    30%{transform: scale(1.1, 1.1);}
+    100% {transform: scale(1, 1);}
+} */
