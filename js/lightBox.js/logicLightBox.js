@@ -4,7 +4,7 @@ const btnRetrocede = document.querySelector('#btn-retrocede');
 
 const lightbox = document.querySelector('#contenedor-principal');
 const imagenActiva = document.querySelector('#img-activa');
-const indiceImagen = 0;
+let indiceImagen = 0;
 let ulImagenes = document.querySelectorAll('#galeryLightBox img');
 const navBar = document.getElementById('header')
 
@@ -49,11 +49,19 @@ const abreLightbox = (event) => {
   
 /*Cierra el Lightbox */
 
-btnCierra.addEventListener('click', () => {
+function cierraLightBox (){
   lightbox.style.display = 'none';
   navBar.style.display = 'block';
-});
 
+}
+
+btnCierra.addEventListener('click', cierraLightBox);
+
+lightbox.addEventListener('click', cierraLightBox)
+
+/// detener la propagacion del evento en la imagen esta echo en html en la linea del contenedor-interno
+
+////////////////////////////////////////////////
 
 const adelantaImagen = () => {
   if (indiceImagen === ulImagenes.length - 1) {
@@ -87,16 +95,11 @@ function keyup(event) {
 window.onkeyup = keyup
 
 
-
 // mouse enter & leave cambios en imagen 
-//comentada ya que no esta funcionando como deveria. cuando el mause pasa por abrir desactiva la funcion de light box
-
 
 
 
 let pFuntionEnter =''
-
-
 
 function enterImg(e) {
  let idImg = e.target;

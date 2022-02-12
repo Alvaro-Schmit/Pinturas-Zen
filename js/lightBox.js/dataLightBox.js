@@ -1,7 +1,7 @@
 
    const imagenes = {
 
-      abrir1: [{
+      interior0: [{
             'id': 'aa1',
             'picture': 'https://i.pinimg.com/originals/31/b9/7d/31b97d42464bff3e6bbfd282406121c4.jpg'
          },
@@ -28,7 +28,7 @@
 
       ],
 
-      abrir2: [{
+      interior1: [{
             'id': 'bb1',
             'picture': 'https://i.pinimg.com/originals/c3/c6/12/c3c6125ff87b2d098353b75d0ce7b1b3.jpg'
          },{
@@ -49,26 +49,7 @@
          }
 
       ],
-
-      video1: [{
-            'id': 'aaam',
-            'picture': 'https://i.pinimg.com/originals/30/9e/d4/309ed45461e7c156a126569145c5e22e.jpg'
-         },
-         {
-            'id': 'aaam',
-            'picture': 'https://i.pinimg.com/originals/b3/b2/5b/b3b25bd549a4fd05977916911118a7a5.jpg'
-         },
-         {
-            'id': 'aaam',
-            'picture': 'https://i.pinimg.com/originals/1a/fb/19/1afb19ab77ded3bde8a19e45147b9356.jpg'
-         },
-         {
-            'id': 'aaam',
-            'picture': 'https://i.pinimg.com/originals/d6/a1/39/d6a139c2ad9fbf179dc0498684a1a401.jpg'
-         }
-
-      ],
-     abrir3: [{
+      interior2: [{
          'id': 'dd1',
          'picture': 'https://i.pinimg.com/originals/ee/41/b7/ee41b72875cb2869632506fe0287abc5.jpg'
       },{
@@ -92,7 +73,8 @@
       },
 
    ],
-   abrir5: [{
+   interior3: [],    
+   interior4: [{
        'id': 'e1',
        'picture': 'https://i.pinimg.com/originals/d1/c5/40/d1c540e78ce2627adaebb7c7539c7f41.jpg'
     },{
@@ -112,7 +94,7 @@
        'picture': 'https://i.pinimg.com/originals/94/56/30/94563035f72bb39e19e10e9af3e86fc3.jpg'
     }
  ],
- abrir6: [{
+ interior5: [{
      'id': 'f1',
      'picture': 'https://i.pinimg.com/originals/ac/20/42/ac204244ccd6ca80049ce8c08ca6e616.jpg'
   },{
@@ -132,7 +114,28 @@
      'picture': 'https://i.pinimg.com/originals/c1/f5/7e/c1f57ec86a6230b38bca2f5824d965d9.jpg'
   }
 ],
-img011: [{
+interior6: [],
+interior7: [{
+      'id': 'aaam',
+      'picture': 'https://i.pinimg.com/originals/30/9e/d4/309ed45461e7c156a126569145c5e22e.jpg'
+   },
+   {
+      'id': 'aaam',
+      'picture': 'https://i.pinimg.com/originals/b3/b2/5b/b3b25bd549a4fd05977916911118a7a5.jpg'
+   },
+   {
+      'id': 'aaam',
+      'picture': 'https://i.pinimg.com/originals/1a/fb/19/1afb19ab77ded3bde8a19e45147b9356.jpg'
+   },
+   {
+      'id': 'aaam',
+      'picture': 'https://i.pinimg.com/originals/d6/a1/39/d6a139c2ad9fbf179dc0498684a1a401.jpg'
+   }
+
+],
+
+
+exterior0: [{
     'id': 'g1',
     'picture': 'https://i.pinimg.com/originals/5e/2b/88/5e2b8862dc1c32efc66d2c9e781f89de.jpg'
  },{
@@ -143,7 +146,7 @@ img011: [{
     'picture': 'https://i.pinimg.com/originals/72/44/30/724430fdaeb2565d03023ffcf6c73155.jpg'
  }
 ],
-img012: [{
+exterior1: [{
    'id': 'h1',
    'picture': 'https://i.pinimg.com/originals/6a/95/a5/6a95a56a9240377a44b92b099be8e081.jpg'
 },{
@@ -163,7 +166,7 @@ img012: [{
    'picture': 'https://i.pinimg.com/originals/e0/58/d9/e058d90fe9fdeb6132574cca10108de9.jpg'
 }
 ],
-img013: [{
+exterior2: [{
    'id': 'l1',
    'picture': 'https://i.pinimg.com/originals/5d/6f/b3/5d6fb3fb2a1f13472a02c94187a403f9.jpg'
 },{
@@ -179,7 +182,7 @@ img013: [{
    'id': 'l5',
    'picture': 'https://i.pinimg.com/originals/3c/4e/af/3c4eafaa53b42971b4af5426ca994c26.jpg'
 }
-],img014: [{
+],exterior3: [{
    'id': 'j1',
    'picture': 'https://i.pinimg.com/originals/16/24/38/1624385d3fae900ba68d087187f8a634.jpg'
 },{
@@ -190,7 +193,7 @@ img013: [{
    'picture': 'https://i.pinimg.com/originals/78/29/5e/78295e50865ac91ca10c7bb39b3a11a7.jpg'
 }
 ],
-img015: [{
+exterior4: [{
     'id': 'k1',
     'picture': 'https://i.pinimg.com/originals/66/e1/1b/66e11b180a28ad3b88604a30a8386429.jpg'
  },{
@@ -210,7 +213,7 @@ img015: [{
     'picture': 'https://i.pinimg.com/originals/40/fb/bc/40fbbca57613297e3fa1a4afdc7f8d2d.jpg'
  }
 ],
-img016: [{
+exterior5: [{
    'id': 'i1',
    'picture': 'https://i.pinimg.com/originals/44/73/67/447367cbf36bf8cd6a0d335ef890a5fa.jpg'
 },{
