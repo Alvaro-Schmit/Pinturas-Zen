@@ -1,4 +1,4 @@
-/*////////////////////////////////////////*/
+/*///////////////////// desplazamiento de VER MAS ///////////////////*/
 .flexboxContainer {
     display: flex;
     flex-wrap: wrap;
@@ -22,20 +22,6 @@
     position: relative;
 }
 
-#pId{
-    width: 8rem;
-    border-left:  solid rgba(0, 0, 0, 0.493) 0.5rem;
-    border-radius: 4px;
-    font-size: 24px;
-    font-weight: bolder;
-    background-color: rgba(0, 0, 0, 0.493);
-    color: rgba(240, 248, 255, 0.726);
-    position: absolute;
-
-bottom: 40%;
-left: 20px;
-pointer-events: none;
-}
 
 /*///////////////////////////   FLEXBOX ENDUIDO ////////////////////////*/
 

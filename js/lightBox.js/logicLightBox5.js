@@ -9,7 +9,7 @@ let ulImagenes = document.querySelectorAll('#galeryLightBox img');
 const navBar = document.getElementById('header')
 
 const everyImage =document.querySelectorAll('.escalar_hover')
-
+console.log(everyImage);
 document.getElementById('galery').style.display = 'none';
 
 
@@ -38,9 +38,12 @@ ulImagenes = document.querySelectorAll('.imageLightBox');
 
 
 const abreLightbox = (event) => {
+  console.log(event.target);
    imagenActiva.src = ulImagenes[0].src;
   lightbox.style.display = 'flex';
   navBar.style.display = 'none';
+
+  
   };
 
   everyImage.forEach(open =>{
@@ -94,22 +97,31 @@ function keyup(event) {
 }
 window.onkeyup = keyup
 
-
-// mouse enter & leave cambios en imagen 
-
-
-
+//primera imagen con efecto hover y parrafo ver mas
 let pFuntionEnter =''
+let imgVermasActiva = document.getElementById('interior0');
+
+let padre0 =imgVermasActiva.parentNode
+
+let child0 = document.createElement('p');
+padre0.appendChild(child0).textContent= 'Ver más';
+child0.setAttribute("id","pId");
+let pFuntionEnter0 = document.getElementById('pId');
+
 
 function enterImg(e) {
+  pFuntionEnter0.remove()
+
  let idImg = e.target;
+
  idImg.style.filter = 'brightness(1.25)';
+
  let padre = idImg.parentNode
  let child = document.createElement('p');
   padre.appendChild(child).textContent= 'Ver más';
   child.setAttribute("id","pId");
   pFuntionEnter = document.getElementById('pId');
-  
+   
 }
 
 function leaveImg(e) {
@@ -117,6 +129,7 @@ function leaveImg(e) {
   idImgleave.style.filter = 'none';
   pFuntionEnter = document.getElementById('pId')
   pFuntionEnter.remove()
+ 
 }
 
 

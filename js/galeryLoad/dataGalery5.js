@@ -1,6 +1,6 @@
 let galeryInterior =[
     {'classDiv':'containerImg',
-    'classImg':'escalar_hover',
+    'classImg':'escalar_hover imgInicio',
     'src':'https://i.pinimg.com/originals/f8/43/89/f843899c501465e52437f1d18d124a44.jpg',
     'id':'interior',
     'idDiv':'interioresDiv',
