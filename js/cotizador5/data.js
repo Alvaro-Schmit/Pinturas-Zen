@@ -15,9 +15,6 @@ let dataSelect = [{
 },{
     'class': 'todos',
     'InfoCampo': 'Caracteristicas de color'
-}, {
-    'class': 'metal',
-    'InfoCampo': 'Tipo de metal'
 }
 ]
 
@@ -130,17 +127,17 @@ let optData04 = [{
 
 //
 
-let optData05 = [{
-    'valorMultiplicador': '1',
-    'textOption': 'Opcion01'
-}, {
-    'valorMultiplicador': '1',
-    'textOption': 'Opcion02'
-}, {
-    'valorMultiplicador': '1',
-    'textOption': 'Opcion03'
-}, {
-    'valorMultiplicador': '1',
-    'textOption': 'Opcion04'
-}
-]
+// let optData05 = [{
+//     'valorMultiplicador': '1',
+//     'textOption': 'Opcion01'
+// }, {
+//     'valorMultiplicador': '1',
+//     'textOption': 'Opcion02'
+// }, {
+//     'valorMultiplicador': '1',
+//     'textOption': 'Opcion03'
+// }, {
+//     'valorMultiplicador': '1',
+//     'textOption': 'Opcion04'
+// }
+// ]

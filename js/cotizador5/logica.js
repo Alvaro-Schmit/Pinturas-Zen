@@ -16,7 +16,7 @@ let select1 = document.getElementById('select1');
 let select2 = document.getElementById('select2');
 let select3 = document.getElementById('select3');
 let select4 = document.getElementById('select4');
-let select5 = document.getElementById('select5');
+// let select5 = document.getElementById('select5');
 
 //funcion que carga las etiquetas option
 
@@ -31,7 +31,7 @@ loadOptions(select1, optData01);
 loadOptions(select2, optData02);
 loadOptions(select3, optData03);
 loadOptions(select4, optData04);
-loadOptions(select5, optData05);
+// loadOptions(select5, optData05);
 
 //trayendo los select por  clases y los  guardando en variable
 
@@ -140,7 +140,7 @@ select1.addEventListener('change', selectFuntion1= ()=> select1.value);
 //el select2 esta en la linea 111
 select3.addEventListener('change', selectFuntion3= ()=> select3.value);
 select4.addEventListener('change', selectFuntion4= ()=> select4.value);
-select5.addEventListener('change', selectFuntion5= ()=> select5.value);
+// select5.addEventListener('change', selectFuntion5= ()=> select5.value);
 let resultado =0
 console.log(resultado);
 
@@ -162,7 +162,7 @@ resultado=0
         resultado = `${innerMeters()}` * `${valorMetroCuadrado}`*`${selectFuntion1()}`*`${selectFuntion2()}`*`${selectFuntion4()}`
         console.log(resultado); 
     }else if (selectMaterial.value === 'metal') {
-        resultado = `${innerMeters()}` * `${valorMetroCuadrado}`*`${selectFuntion1()}`*`${selectFuntion3()}`*`${selectFuntion5()}`
+        resultado = `${innerMeters()}` * `${valorMetroCuadrado}`*`${selectFuntion1()}`*`${selectFuntion3()}`;
         console.log(resultado); 
     }
 

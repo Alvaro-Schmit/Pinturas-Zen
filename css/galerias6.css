@@ -48,7 +48,7 @@
   /*Contenedor interno del Lightbox*/
   
   #contenedor-interno {
-    border: 2px #f3f3f3 solid;
+    /* border: 2px #f3f3f3 solid; */
     padding: 2px;
     background: #3f3f3f;
     height: 95vh;
@@ -68,14 +68,14 @@
   
   .button {
     cursor: pointer;
-    background: rgba(36, 37, 41, 0.5);
+    background:transparent;
     border: none;
     color: #f3f3f3;
   }
   
   #btn-cierra img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
    
     border-radius: 50%;
     line-height:0;

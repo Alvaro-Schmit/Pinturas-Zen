@@ -396,3 +396,23 @@ body {
     font-size: 22px;
   }
 }
+
+/* /////////////////VER MAS//////////////////////////// */
+
+
+.ver-mas{
+  color: white;
+  background-color: rgba(122, 121, 121, 0.911);
+  padding: 9px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.ver-mas:hover{
+  
+  color: white;
+  background-color: rgba(83, 83, 82, 0.911);
+
+  transition: all 0.5s ease 0s;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
