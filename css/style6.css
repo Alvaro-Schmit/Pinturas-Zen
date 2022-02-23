@@ -159,8 +159,10 @@ body {
   }
 
   .circulosIndex {
+    width: 300px;
     padding: 10px 30px;
     height: 520px;
+    margin-bottom: 20px;
   }
 }
 
@@ -171,11 +173,13 @@ body {
     justify-content: center;
   }
   .circulosIndex {
-    margin: 0px 30px;
-    padding: 10px 30px;
+    width: 30%;
+  
+   
     height: 520px;
   }
 }
+
 
 /* 
 .circle:hover{
@@ -326,6 +330,7 @@ body {
 }
 
 @media (max-width: 480px) {
+
   #cuadro-invertido {
     display: flex;
     flex-wrap: wrap;

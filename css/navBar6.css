@@ -19,3 +19,13 @@
     font-size: 1.5rem !important;
 }
 }
+@media (max-width: 480px) {
+    .nombreh3{ font-size: 30px;}
+    .zen{font-size: 26;}
+    
+}
+@media (max-width: 340px) {
+    .nombreh3{ font-size: 26px;}
+    .zen{font-size: 22;}
+    
+}
