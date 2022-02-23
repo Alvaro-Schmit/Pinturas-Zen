@@ -119,11 +119,31 @@ body {
   left: 100px;
   display: flex;
 }
+/* /////////////////////////////REDES/////////////////////// */
+
+.redes-container{
+display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+justify-content: end;
+align-items: center;
+background-color: transparent;
+
+}
+
 
 #logoInstagram {
   width: 80px;
   height: auto;
 }
+#logoWhatsApp {
+  padding-right: 50px;
+  width: 120px;
+  height: auto;
+  box-sizing: border-box;
+}
+/* ///////////////////////////////////////////////////////////////////////// */
+
 
 /*circulos de index*/
 
@@ -273,13 +293,13 @@ body {
 @media (min-width: 768px) {
   .scrolImg img {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(50px);
 
     transition: 0.7s ease-in-out all;
   }
   .scrolImg img.cuadroIzq {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-50px);
 
     transition: 0.7s ease-in-out all;
   }
@@ -293,6 +313,18 @@ body {
 /* ////////////////////////////////////////////////////////// */
 /* //////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////////////// */
+main{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cuadros-general{
+
+  width: 90%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
 .cuadros-container {
   width: 100%;
   height: auto;
@@ -355,11 +387,11 @@ body {
     box-sizing: border-box;
   }
   .cuadros-titulo {
-    font-size: 36px;
+    font-size: 34px;
     color: rgb(43, 38, 34);
   }
   .p-cuadros {
-    font-size: 25px;
+    font-size: 24px;
   }
 }
 /* .img-cuadros-container{
