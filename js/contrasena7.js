@@ -5,7 +5,7 @@ function ir(event){
   if(document.form.password.value === c){
     window.location="cotizador.html";
   }else{
-    alert("Contrasenha incorreta");
+    alert("Contraseña incorreta");
   }
 }
 

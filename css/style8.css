@@ -1,4 +1,7 @@
-/*////////////////////////////           */
+
+
+/*////////////////////////////    
+       */
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -122,13 +125,17 @@ body {
 /* /////////////////////////////REDES/////////////////////// */
 
 .redes-container{
+  width: 100%;
+  position: fixed;
+  bottom: 1%;
+padding: 2%;
 display: flex;
 flex-wrap: nowrap;
 flex-direction: row;
-justify-content: end;
+justify-content: space-between;
 align-items: center;
 background-color: transparent;
-
+z-index: 20;
 }
 
 
@@ -137,7 +144,7 @@ background-color: transparent;
   height: auto;
 }
 #logoWhatsApp {
-  padding-right: 50px;
+
   width: 120px;
   height: auto;
   box-sizing: border-box;

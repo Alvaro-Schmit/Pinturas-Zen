@@ -76,10 +76,10 @@ let optData02 =[{
     'valorMultiplicador': '3',
     'textOption': 'Piso de madera'
 }, {
-    'valorMultiplicador': '40',
+    'valorMultiplicador': '25',
     'textOption': 'Puertas interior'
 }, {
-    'valorMultiplicador': '50',
+    'valorMultiplicador': '30',
     'textOption': 'Puertas exterior'
 },
 ]

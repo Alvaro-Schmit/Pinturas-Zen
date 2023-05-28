@@ -121,7 +121,7 @@ select2.addEventListener('change', selectFuntion2=()=>{
   
 //comienzo a rescatar valores necesarios para la operacion de cotizacion
 
-let valorMetroCuadrado = 100
+let valorMetroCuadrado = 120
 
 let metrosIngresados= document.getElementById('metrosIngresados')
 
